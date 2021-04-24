@@ -1,0 +1,527 @@
+/* COMMON */
+body {
+    /* 폰트적용 (이 본문안에서는 이 폰트를 기본적으로 사용하겠다는 의미) */
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* HEADER */
+.eventLanding {
+    background: #5F0080;
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 100%;
+    height: 42px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: -.05em;
+    position: relative;
+    line-height: 42px;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.eventLanding a {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;align-items: center;
+    margin: 0 auto;
+}
+.eventLanding .bnr_arr {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+}
+
+.userMenu {
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    margin: 0px -27.3333px 0px 0px ; 
+}
+
+.userMenu .inner{
+    flex-direction: column;
+    background-color:white;
+    width: 1050px;
+    height: 37px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+  .userMenu .inner .star img{
+    height: 22px;
+    width: 163px;
+    float: left;
+    margin: auto;
+    align-items: center;
+    justify-self: center;
+    line-height: 1;
+    letter-spacing: -.05em;
+  }
+  
+
+ .userMenu .inner .list_menu {
+    flex-direction: column;
+    float: right;
+    padding: 0px 5px;
+    color: black;
+    text-decoration:none;
+    cursor: pointer; 
+    background: #fff;
+    align-items: center;
+    height: 37px;
+    padding: 0 22px 0 10px;
+    color: #333;
+    line-height: 35px;
+    white-space: nowrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.userMenu .inner .list_menu a{
+    text-decoration:none;
+}
+.userMenu .inner ul .menu_join {
+    text-decoration:none;
+    float: left;
+}
+.userMenu .inner ul .menu_login {
+    text-decoration:none;
+    float: left;
+}
+.userMenu .inner ul .menu1st {
+    text-decoration:none;
+    float: left;
+}
+
+#userMenu .sub {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    width: 102px;
+    padding: 3px 9px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.userMenu .inner li ul sub{
+    position: relative;
+    cursor: pointer;
+    list-style-type: none;
+    /* display: block; */
+    list-style-type: disc;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em; */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    border-right: 1px solid #000;
+}
+
+
+.headerLogo{
+    background-color: white;
+    width: 100%;
+    height: 63px;
+    top: 79px;
+    left: 0;
+    margin: 0px -27.3333px 0px 0px ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.headerLogo a {
+    width: 103px;
+    height: 79px;
+    margin: 0 auto;
+}
+
+.headerLogo a .mainImg{
+    width: 103px;
+    height: 79px;
+    margin: 0 auto;
+    display: block;
+}
+
+.realmenu{
+    
+    top: 142px;
+    height: 55px;
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    display: flex;
+    z-index: 3;
+
+}
+
+.realmenu .testmenu {
+    display: inline-block;
+    width: 1050px;
+    height: 55px;
+    top: 142px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+
+.realmenu .testmenu .gnb {
+    
+    width: 1050px;
+    height: 55px;
+    top: 142px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #4C4C4C;
+    float: left;
+    z-index: 2;
+}
+
+.realmenu .testmenu .gnb li {
+    float: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px 0 0;
+}
+
+#gnb .gnb_main .menu1 .ico {
+    float: left;
+    width: 16px;
+    height: 14px;
+    margin: 5px 14px 0 0;
+    padding: 0;
+    line-height: 20px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.realmenu .testmenu .gnb .menu1 {
+    width: 168px;
+}
+
+
+.realmenu .testmenu .gnb a {
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+.realmenu .testmenu .gnb a {
+    overflow: hidden;
+    float: left;
+    width: 124px;
+    height: 55px;
+    padding: 16px 0 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 20px;
+    text-align: center;
+}
+
+.realmenu .testmenu .gnb .sreach{
+    line-height: 1;
+    color: #4c4c4c;
+    font-size: 12px;
+    font-family: 'Noto Sans';
+    letter-spacing: -0.3px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    right: 108px;
+    top: 10px;
+    /* width: 242px; */
+    height: 30px;
+    float: left;
+}
+
+.realmenu .testmenu .gnb .sreach img {
+    width: 30px;
+    height: 30px;
+}
+
+.realmenu .testmenu .gnb .pin img {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+}
+
+.realmenu .testmenu .gnb .cart img {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+}
+
+/* 메뉴와 메인 슬라이더 사이 간격 조절 */
+.main_type1 {
+    margin: 15px auto;
+    line-height: 1;
+    font-size: 12px;
+    box-sizing: border-box;
+/* margin: 0; */
+    padding: 0;
+    word-break: break-all;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #333;
+}
+
+.main_type1 .list_goods .bx-wrapper {
+    max-width: 100%; 
+    margin: 0px auto;
+}
+
+.main_type1 .list_goods .bx-wrapper ul {
+    width: 100%; 
+    overflow: hidden; 
+    /* position: relative;  */
+    height: 370px;
+}
+
+.main_type1 .list_goods .bx-wrapper .bx-viewpoint ul .bx-clone {
+    width: 1715%; 
+    /* position: relative;  */
+    transition-timing-function: ease-in-out; 
+    transition-duration: 0s; 
+    transform: translate3d(-15750px, 0px, 0px);
+}
+
+.main_type1 .list_goods .bx-wrapper .bx-viewpoint ul .main_banner {
+    float: left; 
+    list-style: none; 
+    /* position: relative;  */
+    width: 1050px;
+}
+
+
+
+/* MAIN 슬라이더 */
+.bx-wrapper .main_banner .list {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transform: translate3d(-7350px, 0px, 0px);
+} 
+
+/* 메인 추천 */
+.product_list {
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.product_list .tit_goods {
+    width: 1050px;
+    height: 146px;
+    padding: 79px 0 35px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx-viewpoint {
+    width: 1050px;
+    height: 506px;
+}
+.bx-wrapper .main_banner img {
+    justify-content: center;
+}
+
+.bx-wrapper .bx-control a img{
+    width: 52px;
+    height: 52px;
+    background-image: cover;
+}
+
+.list_goods .list .thumb_goods img{
+    width: 249px;
+    height: 320px;
+    background-position: 50% 50%;
+}
+
+/* FOOTER */
+/* 샛별배송 배너 */
+.footer {
+    
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto sans KR';
+    font-weight: 400;
+    width: 1050px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    letter-spacing: -.2px;
+}
+
+.footer .star_delevery {
+    width: 1050px;
+    height: 160px;
+    
+    justify-content: center;
+}
+
+.footer .footer_txt {
+    width: 1050px;
+    padding-bottom: 20px;
+}
+.footer .footer_txt .consumer {
+    /* float: left; */
+    width: 534px;
+}
+.footer .footer_txt .view .tit {
+    width: 140px;
+    margin-right: 16px;
+}
+.footer .footer_txt .consumer h2 {
+    padding-top: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+    line-height: 36px;
+    letter-spacing: -.5px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.footer .footer_txt .consumer .call h3 {
+    padding-top: 4px;
+    font-weight: 800;
+    font-size: 28px;
+    color: #333;
+    line-height: 36px;
+    letter-spacing: -.5px;
+    white-space: nowrap;
+    
+}
+.footer .footer_txt .consumer .call .tit {
+    float: left;
+    width: 140px;
+    margin-right: 16px;
+    display: block;
+}
+footer .footer_txt .consumer dl{
+    float: left;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    letter-spacing: -.2px;
+}
+.footer .footer_txt .consumer dd {
+    color: #999;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -.2px;
+}
+
+.footer .footer_txt .consumer .kakao a {
+    padding-top: 4px;
+    font-weight: 800;
+    font-size: 28px;
+    color: #333;
+    line-height: 36px;
+    letter-spacing: -.5px;
+    white-space: nowrap;
+    margin: auto;
+    float: left;
+    display: block;
+}
+.footer .footer_txt .consumer .kakao .tit {
+    float: left;
+    text-align: left;
+    width: 140px;
+    margin-right: 16px;
+}
+.footer .footer_txt .consumer .mantoman .tit {
+    float: left;
+    text-align: left;
+    width: 140px;
+    display: block;
+}
+.footer .footer_txt .consumer .mantoman a {
+    padding-top: 4px;
+    font-weight: 800;
+    font-size: 28px;
+    color: #333;
+    line-height: 36px;
+    letter-spacing: -.5px;
+    white-space: nowrap;
+}
+.footer .footer_txt .company {
+    float: left;
+    width: 534px;
+}
+}
+.footer .footer_txt .company .info {
+    float: left;
+    font-family: 'Noto sans KR';
+    font-weight: 400;
+}
+.footer .footer_txt .company .info .companyinfo li{
+    float: left;
+    padding-right: 16px;
+    color: #999;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Noto sans KR';
+    font-weight: 400;
+}
+
+/* header {
+    /* 마켓컬리 메뉴가 적혀있는 헤더바 */
+    /*background: purple;
+    color: #FFFFFF;
+    /* top: 107px; 
+    height: 55px;
+    width: 100%;
+    align-items: center;
+
+} */
+
+
+/* main  {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 370px;
+    position: absolute;
+} */
+
