@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
+    <!-- 파비콘 설정 -->
+    <link rel="shortcut icon" href="https://res.kurly.com/images/marketkurly/logo/ico_32.png">
+    <!-- 모든 웹 브라우저 기본 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 웹 폰트 연결 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- main.css 연결 -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- main.js 연결 -->
+    <script defer src="./js/main.js"></script>
+    <!-- a태그에서 밑줄 없애기 -->
+    <style type="text/css"> 
+        a { text-decoration:none }
+    </style> 
+</head>
+
+<body>
+    <!-- 맨 꼭대기 보라색 이벤트 헤더 -->
+    <section class="eventLanding" >
+    <a href="" style="clear: both;"> 
+        인기상품 100원과 내 맘대로 무료배송 받으러 가기
+        <img class="bnr_arr" src="https://res.kurly.com/pc/ico/1908/ico_arrow_fff_84x84.png" alt="">
+    </a>
+    </section>
+   
+
+    <!-- 샛별배송 헤더 -->
+    <section class="userMenu">
+        <div class="inner">
+            <div class="star">
+                <img src="https://res.kurly.com/pc/service/common/1908/delivery_190819.gif" alt="서울, 경기, 인천 샛별배송, 수도권 이외 지역 택배배송">
+            </div>
+            <ul class="list_menu">
+                <li class="menu_join">
+                    <a href="/shop/member/join.php" class="link_menu">회원가입</a>
+                </li>
+                <li class="menu_login">
+                    <a href="/shop/member/login.php" class="link_menu">로그인</a>
+                </li>
+                <li class="menulst">
+                    <a href="/shop/board/list.php?id=notice" class="link_menu">고객센터</a> 
+                    <!-- <ul class="sub">
+                        <li><a href="/shop/board/list.php?id=notice">공지사항</a>
+                        </li> 
+                        <li><a href="/shop/service/faq.php">자주하는 질문</a>
+                        </li>
+                        <li><a href="/shop/mypage/mypage_qna.php">1:1 문의</a>
+                        </li> 
+                        <li><a href="/shop/mypage/offer.php">상품 제안</a>
+                        </li>
+                        <li><a href="/shop/mypage/echo_packing.php">에코포장 피드백</a>
+                        </li>
+                    </ul> -->
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <!-- 메인 로고가 있는 헤더 -->
+    <section class="headerLogo">
+        <a href="">
+            <img class="mainImg" src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="마켓컬리로고" style="display: block;">
+        </a>
+    </section>
+
+    <section class="realmenu"> 
+        <section class="testmenu"> 
+            <ul class="gnb">
+                <li class="menu1">
+                    <a href="#none" class="">
+                        <img class="hmgmenu" src="https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off.png" alt="햄버거메뉴">
+                        <span class="ico"></span>
+                        <span class="txt">전체 카테고리</span>
+                    </a>
+                </li>
+                <li class="menu2">
+                    <a href="" class="link new ">
+                        <span class="txt">신상품</span>
+                    </a>
+                </li>
+                <li class="menu3">
+                    <a href="" class="link best ">
+                    <span class="txt">베스트</span>
+                    </a>
+                </li>
+                <li class="menu4">
+                    <a href="" class="link bargain ">
+                    <span class="txt">알뜰쇼핑</span>
+                    </a>
+                </li>
+                <li class="lst">
+                    <a href="/shop/goods/event.php?&amp;" class="link event ">
+                    <span class="txt">금주혜택</span>
+                    </a>
+                </li>
+                
+                
+                <li class="sreach">
+                    <input id="search_box" placeholder="더위타파 여름준비의 모든 것!">
+                    <div id="side_search" class="gnb_search">
+                        <form action="/shop/goods/goods_search.php?&amp;" onsubmit="return searchTracking(this)">
+                            <!-- <input type="hidden" name="searched" value="Y"> 
+                            <input type="hidden" name="log" value="1"> 
+                            <input type="hidden" name="skey" value="all"> 
+                            <input type="hidden" name="hid_pr_text" value="다채로운 디저트의 환상적인 맛!"> 
+                            <input type="hidden" id="edit" name="edit" value=""> 
+                            <input name="sword" type="text" id="sword" value="다채로운 디저트의 환상적인 맛!" required="required" label="검색어" class="inp_search"> 
+                            <input type="image" src="https://res.kurly.com/pc/service/common/1908/ico_search_x2.png" class="btn_search"> 
+                             -->
+                        </form>
+                    </div>
+                    <div class="search_icon">
+                        <img class="delete" src="https://res.kurly.com/pc/ico/2010/ico_search_del.svg" alt="">
+                        <img class="sreachimg" src="https://res.kurly.com/pc/service/common/1908/ico_search_x2.png" alt="">    
+                    </div>
+                   </li>
+
+                <li class="pin">
+                    <div class="location_set">
+                        
+                            <img class="pinimg" src="https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1" alt="">
+                        <!-- <button type="button" class="btn_location on">배송지 설정하기
+                        </button> 
+                        <div class="layer_location">
+                            <div class="no_address">
+                                <span class="emph">배송지를 등록</span>하고<br>
+                                        구매 가능한 상품을 확인하세요!        
+                                    <div class="group_button double">          
+                                        <button type="button" class="btn default login">로그인</button>        <button type="button" class="btn active searchAddress">
+                                        <span class="ico"></span>주소검색</button>       
+                                    </div>
+                            </div>
+                        </div> -->
+                        
+                        
+                    </div>
+                </li>
+
+
+
+                <li class="cart">
+                   <div class="cart_count">
+                        <div class="inner_cartcount">
+                            
+                                <span class="screen_out">
+                                    <img class="cartimg" src="https://res.kurly.com/pc/service/common/2011/ico_cart.svg" alt="">
+                                </span> 
+                                <!-- <span id="cart_item_count" class="num realtime_cartcount" style="display: none;"></span>
+                            
+                        </div> 
+                        <div id="addMsgCart" class="msg_cart">
+                            <span class="point"></span> 
+                            <div class="inner_msgcart">
+                                <img src="  " alt="" class="thumb">
+                                <p id="msgReaddedItem" class="desc">
+                                    <span class="tit"></span>
+                                    <span class="txt">장바구니에 상품을 담았습니다.
+                                    <span class="repeat">이미 담으신 상품이 있어 추가되었습니다.</span>
+                                    </span>
+                                </p>
+                            </div> -->
+                        </div> 
+                    </div>
+                </li>
+
+                </ul>
+                
+        </section>
+        </section>
+
+    <!-- 메뉴 헤더 -->
+    
+
+
+
+    <!-- 본문 -->
+
+    <!-- 메인 슬라이더 -->
+    <main> 
+        <div>
+            <div class="main_type1">
+                <div class="list_goods">
+                    <div class="bx-wrapper">
+                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 370px;" >
+                            <ul data-section="main_banner" class="list" > 
+                                <li data-index="15" class="bx-clone" data-name="main_banner">
+                                    <a href="">
+                                        <img src="https://img-cf.kurly.com/shop/data/main/1/pc_img_1596164134.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="1" data-name="main_banner">
+                                    <a href="">
+                                        <img src="https://img-cf.kurly.com/shop/data/main/1/pc_img_1618972440.png" alt="">
+                                    </a>
+                                </li>
+                                <li data-index="2" data-name="main_banner" >
+                                    <a href="">
+                                        <img src="https://img-cf.kurly.com/shop/data/main/1/pc_img_1619143241.jpg" alt="">
+                                    </a>
+                                    
+                                </li>
+                                <li data-index="3" data-name="main_banner" >
+                                    <a href="">
+                                        <img src="https://img-cf.kurly.com/shop/data/main/1/pc_img_1618996028.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li data-index="4" data-name="main_banner" >
+                                    <a href="">
+                                        <img src="https://img-cf.kurly.com/shop/data/main/1/pc_img_1618993544.jpg" alt="">
+                                    </a>
+                                    
+                                </li>
+                                <li data-index="5" data-name="main_banner" >
+                                    <a href="">
+                                        <img src="https://img-cf.kurly.com/shop/data/main/1/pc_img_1618993506.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bx-control">
+                            <a class="bx-prev" href="">
+                                <img src="https://res.kurly.com/pc/service/main/1908/ico_prev1_x2.png" alt="">
+                            </a>
+                            <a class="bx-next" href="">
+                                <img src="https://res.kurly.com/pc/service/main/1908/ico_next1_x2.png" alt="">
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- 메인 추천 -->
+    <div class="product_list">
+        <div class="tit_goods">
+            <h3 class="tit">
+                <span class="name"> 
+                   이 상품 어때요?                        
+                </span>
+            </h3>
+        </div>
+        <!----> 
+        <div class="list_goods">
+            <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                    <ul data-title="이 상품 어때요?" class="list">
+                        <li data-index="1" class="" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                            <a class="thumb_goods">
+                            <!---->
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAACRCAQAAABjof6/AAAANUlEQVR4Ae3BgQAAAADDoPtTT+AI1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAnfAsAAe7+tYwAAAAASUVORK5CYII=" alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1481626602359l0.jpg&quot;);">
+                            </a> 
+                        <div class="info_goods">
+                            <span class="name">
+                                <a class="txt">[라니에리] 유기농 콩기름</a>
+                            </span> 
+                            <span class="price">
+                                <span class="dc">19%</span>10,900원                            
+                            </span> 
+                            <span class="cost">13,500원</span>
+                        </div>
+                    </li>
+                    <li data-index="2" class="" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                        <a class="thumb_goods">
+                            <span class="global_sticker">
+                                <span class="inner_sticker">
+                                    <span class="bg_sticker" style="background-color: rgb(189, 118, 255); opacity: 0.9;"></span> 
+                                    <span class="txt_sticker"><span>
+                                        <span class="emph_sticker">20%</span> 
+                                        
+                                    </span>
+                                    <span>
+                                        <span>채소쿠폰</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span> 
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAACRCAQAAABjof6/AAAANUlEQVR4Ae3BgQAAAADDoPtTT+AI1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAnfAsAAe7+tYwAAAAASUVORK5CYII=" alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1589778792101l0.jpg&quot;);"></a> 
+                        <div class="info_goods">
+                            <span class="name">
+                                <a class="txt">무농약 브로콜리 2종</a>
+                            </span> 
+                            <span class="price"><!---->2,490원                            
+                            </span> 
+                            <!---->
+                        </div>
+                    </li>
+                    <li data-index="3" class="cut" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                        <a class="thumb_goods">
+                            <!----> 
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAACRCAQAAABjof6/AAAANUlEQVR4Ae3BgQAAAADDoPtTT+AI1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAnfAsAAe7+tYwAAAAASUVORK5CYII=" alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1578533870214l0.jpg&quot;);"></a> 
+                            <div class="info_goods">
+                                <span class="name">
+                                    <a class="txt">[아넬라] 과일 퓨레 9종</a>
+                                </span> 
+                                <span class="price"><!---->3,900원                            
+                                </span> 
+                                <!---->
+                            </div>
+                        </li>
+                        <li data-index="4" class="" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                            <a class="thumb_goods"><!----> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAACRCAQAAABjof6/AAAANUlEQVR4Ae3BgQAAAADDoPtTT+AI1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAnfAsAAe7+tYwAAAAASUVORK5CYII=" alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1594177552715l0.jpg&quot;);"></a> 
+                            <div class="info_goods">
+                                <span class="name">
+                                    <a class="txt">[일상味소] 샤브샤브 300g(냉동)</a>
+                                </span> 
+                                <span class="price">
+                                    <span class="dc">15%</span>11,475원                            
+                                </span> 
+                                <span class="cost">13,500원</span>
+                            </div>
+                        </li>
+                                       
+                    </ul>
+                        </div>
+                        <div class="bx-controls bx-has-controls-direction">
+                            <div class="bx-controls-direction">
+                                <a class="bx-prev disabled" href="">Prev</a>
+                                    <a class="bx-next" href="">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+
+    <!-- 푸터 -->
+    <div class="footer">
+        <img class="star_delevery" src="//img-cf.kurly.com/shop/data/main/15/pc_img_1568875999.png" alt="">
+        <div class="footer_txt">
+            <div class="consumer">
+                <h2 class="happy">고객행복센터</h2>
+                <div class="view call">
+                    <h3 class="tit number"> <span>1644-1107</span>
+                    </h3>
+                    <dl class="callcenter">
+                        <dt>365고객센터</dt>
+                        <dd>오전 7시 - 오후 7시</dd>
+                    </dl>
+                </div>
+                <div class="view kakao">
+                    <a class="tit">카카오톡 문의</a>
+                    <dl class="callcenter">
+                        <dt>365고객센터</dt>
+                        <dd>오전 7시 - 오후 7시</dd>
+                    </dl>
+                </div>
+                <div class="view mantoman">
+                    <a class="tit">1:1문의</a>
+                    <dl class="callcenter">
+                        <dt>24시간 접수 가능</dt>
+                        <dd>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</dd>
+                    </dl>
+                </div>
+            </div>    
+            <div class="company">
+                <div class="info">
+                    <ul class="companyinfo">
+                        <li>
+                            <a href="">
+                                컬리소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                컬리소개영상
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                인재채용
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                이용약관
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                개인정보처리방침
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                이용안내
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    법인명 (상호) : 주식회사 컬리 
+                    <span class="bar">I</span>
+                     사업자등록번호 : 261-81-23567
+                    <a class="link" href="">사업자정보 확인</a>
+                    <br>
+                    
+                    통신판매업 : 제 2018-서울강남-01646 호 
+                    <span class="bar">I</span>
+                     개인정보보호책임자 : 이원준
+                    
+                    <br>
+                    
+                    주소 : 서울시 도산대로 16길 20, 이래빌딩 81 ~ 4F "
+                    <span class="bar">I</span>
+                     대표이사 : 김슬아
+                    
+                    <br>
+                    
+                    입점문의 : 
+                    <a class="link" href="">입점문의하기</a>
+                    <span class="bar">I</span>
+                     제휴문의 : 
+                    <a class="link" href="">business@kurlycorp.com</a>
+                    <br>
+                    
+                    채용문의 : 
+                    <a class="link" href="">recruit@kurlycorp.com</a>
+                    <br>
+                    
+                    팩스: 070 - 7500 - 6098 
+                    <span class="bar">I</span>
+                     이메일 
+                    <a class="link" href="">help@kurlycorp.com</a>
+                    <em class="copy">@ KURLY CORP, ALL RIGHTS RESERVED</em>
+
+
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    
+</body>
+</html>
